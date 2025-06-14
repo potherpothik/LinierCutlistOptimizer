@@ -18,11 +18,11 @@ interface ProfileData {
 const Index = () => {
   const [cutWidth, setCutWidth] = useState(5);
   const [unusableLength, setUnusableLength] = useState(80);
-  const [profileSizes, setProfileSizes] = useState<number[]>([6000, 4000, 3000]);
+  const [profileSizes, setProfileSizes] = useState<number[]>([6400, 5600, 4900]);
   const [profileData, setProfileData] = useState<ProfileData[]>([
     { profile_length: 2500, profile_qty: 4 },
-    { profile_length: 1800, profile_qty: 6 },
-    { profile_length: 1200, profile_qty: 8 },
+    // { profile_length: 1800, profile_qty: 6 },
+    // { profile_length: 1200, profile_qty: 8 },
   ]);
   const [results, setResults] = useState(null);
   const [isOptimizing, setIsOptimizing] = useState(false);
@@ -81,8 +81,8 @@ const Index = () => {
     setResults(null);
     setProfileData([
       { profile_length: 2500, profile_qty: 4 },
-      { profile_length: 1800, profile_qty: 6 },
-      { profile_length: 1200, profile_qty: 8 },
+      // { profile_length: 1800, profile_qty: 6 },
+      // { profile_length: 1200, profile_qty: 8 },
     ]);
     toast({
       title: "Reset Complete",
