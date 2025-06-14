@@ -188,7 +188,7 @@ const Index = () => {
               📊 Profile Length Data
             </CardTitle>
             <p className="text-sm text-slate-500 mt-1">
-              Enter your profile lengths and quantities. You can paste data from Excel or upload a CSV file.
+              Enter your profile lengths and quantities. You can paste data from Excel or upload a CSV file. For csv upload Use column header profile_length and	profile_qty
             </p>
           </CardHeader>
           <CardContent>
